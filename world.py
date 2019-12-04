@@ -7,7 +7,9 @@ import mechanics
 from armory import *
 from beastiary import *
 
-holanow = mechanics.player("Holanow", 75, [], [], moonlight_horn, stone_mail, 1999, 5, 10, mechanics.point(0, 0))
+holanow = mechanics.player("Holanow", 75, [], [], unarmed, stone_mail, 1999, 5, 10, mechanics.point(0, 0))
+holanow.wep_exp["Martial"] = 1000
+holanow.change_stance("arts")
 
 ################################################################################
 #Goblin Cave Test Module

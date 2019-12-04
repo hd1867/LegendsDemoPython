@@ -259,14 +259,14 @@ class potion:
     Potions
     """
 
-    def __init__(name, effect, potency, size, m):
+    def __init__(self, name, effect, potency, size, m):
         self.name = name
         self.effect = effect #str
         self.potency = potency #int
         self.size = size #int
 
     def use(self, player):
-        if effect == "health":
+        if self.effect == "health":
             player.current_health += self.potency
 
         self.size -= 1
